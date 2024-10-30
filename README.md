@@ -32,8 +32,8 @@ After completing these steps, you should see the project running on `http://loca
 
 This project is organized with TanStack Router’s file-based routing. Here’s a quick overview of the core files:
 
-- **`index.tsx`** - The Home page, featuring a React and Vite logo with interactive elements styled with Tailwind.
-- **`about.tsx`** - The About page, showcasing a fun description and animated logos with a playful design.
+- **`index.tsx`**
+- **`about.tsx`** 
 
 To add new pages, simply create a new file in the `src/routes` folder, and TanStack Router will automatically pick it up as a new route.
 
@@ -53,7 +53,3 @@ To explore or extend the routing, check out the `src/routes` folder and `__root.
 
 - **Build for Production**: `npm run build`
 - **Preview Production Build**: `npm run preview`
-
----
-
-Feel free to reach out if you have any questions or want to learn more about the setup. Happy coding!
