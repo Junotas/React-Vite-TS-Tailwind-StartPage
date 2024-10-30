@@ -53,3 +53,12 @@ To explore or extend the routing, check out the `src/routes` folder and `__root.
 
 - **Build for Production**: `npm run build`
 - **Preview Production Build**: `npm run preview`
+
+## 🔮 Future Enhancements
+
+This project is designed to be easily extensible, so here are some ideas for future enhancements to add extra functionality and make it even more versatile:
+
+- **📡 Data Fetching**: Integrate TanStack Query for efficient server data fetching, caching, and synchronization.
+- **🔑 Authentication**: Consider adding Firebase Auth, Auth0, or another authentication provider for user login support.
+- **🧩 Component Libraries**: Add a library like Material-UI for ready-made components that are customizable and accessible.
+- **🔧 Linting & Formatting**: Configure ESLint and Prettier for code consistency and readability.
