@@ -26,8 +26,7 @@ export const Route = createFileRoute('/about')({
         </div>
 
         <p className="text-2xl text-center mb-6 max-w-lg">
-          We’re two logos on a mission to make web development fun, fast, and accessible to everyone.
-          Whether you're new or a pro, we're here to keep things smooth and stylish.
+          We’re two logos just haning out, waiting for you to build something cool with us!
         </p>
 
         <button

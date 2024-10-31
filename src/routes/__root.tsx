@@ -9,7 +9,7 @@ const activeProps = {
 export const Route = createRootRoute({
   component: () => (
     <>
-      <nav className="flex space-x-4 p-4 bg-blue-500 text-white">
+      <nav className="flex space-x-4 p-4 bg-purple-500 text-white">
         <Link to="/" activeProps={activeProps}>
           Home
         </Link>
