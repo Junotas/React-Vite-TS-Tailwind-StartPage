@@ -1,6 +1,6 @@
 # React-Vite-Tailwind Project with TanStack Router
 
-Welcome to this React-Vite project styled with Tailwind CSS and enhanced with TypeScript. This setup also includes **TanStack Router** for file-based routing, making it easy to add new pages with minimal configuration.
+Welcome to this React-Vite-Typescript-Tailwind-TanstackRouter landing page :)
 
 ## 🚀 Getting Started
 
