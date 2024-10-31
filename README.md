@@ -8,7 +8,7 @@ Welcome to this React-Vite-Typescript-Tailwind-TanstackRouter landing page :)
    ```bash
    git clone https://github.com/Junotas/React-Vite-TS-Tailwind-StartPage.git
    ```
-2. **Remove Existing Git History (Optional)**
+2. **Remove Existing Git History**
    If you want to start with a clean Git history (recommended if you plan to push to your own repository), run:
    ```bash
    cd React-Vite-TS-Tailwind-StartPage
@@ -48,11 +48,6 @@ The project utilizes **TanStack Router** for easy, type-safe, and file-based rou
 - **About Page (`about.tsx`)**: A fun, animated page with additional info and an interactive button.
 
 To explore or extend the routing, check out the `src/routes` folder and `__root.tsx` file.
-
-## 📦 Additional Commands
-
-- **Build for Production**: `npm run build`
-- **Preview Production Build**: `npm run preview`
 
 ## 🔮 Future Enhancements
 
