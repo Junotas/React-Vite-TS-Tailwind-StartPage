@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { createFileRoute } from '@tanstack/react-router';
 import { useUserList } from '../hooks/useUserList';
+import { Button, TextField } from '@mui/material';
 
 export const Route = createFileRoute('/')({
   component: () => {
@@ -15,34 +16,36 @@ export const Route = createFileRoute('/')({
     };
 
     return (
-      <div className="flex flex-col justify-center items-center min-h-screen bg-purple-50">
+      <div className="flex flex-col justify-center items-center min-h-screen" style={{ backgroundColor: '#f3e5f5' }}>
         <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-6">
           <div className="flex justify-between items-center border-b pb-3 mb-4">
-            <h2 className="text-2xl font-bold text-purple-800">User List</h2>
-            <button
-              className="bg-purple-500 text-white font-bold py-1 px-4 rounded hover:bg-purple-600 transition"
+            <h2 className="text-2xl font-bold" style={{ color: '#6a1b9a' }}>User List</h2>
+            <Button
+              variant="contained"
+              color="primary"
               onClick={toggleFetch}
+              sx={{ fontWeight: 'bold', marginBottom: 2 }}
             >
               {isModified ? 'Reset List' : 'Fetch List'}
-            </button>
+            </Button>
           </div>
 
           <div className="min-h-[150px]">
             {isLoading ? (
               <p>Loading users...</p>
             ) : error ? (
-              <p className="text-red-500">Error loading users</p>
+              <p style={{ color: '#d32f2f' }}>Error loading users</p>
             ) : (
               <ul className="list-disc list-inside text-center space-y-2">
                 {users.map((user) => (
                   <li key={user.id} className="flex justify-between items-center text-lg">
                     {user.name}
-                    <button
+                    <Button
                       onClick={() => removeUser(user.id)}
-                      className="text-red-500 hover:text-red-700 transition"
+                      sx={{ color: 'secondary.main' }}
                     >
                       Delete
-                    </button>
+                    </Button>
                   </li>
                 ))}
               </ul>
@@ -50,19 +53,21 @@ export const Route = createFileRoute('/')({
           </div>
 
           <div className="flex items-center mt-4">
-            <input
-              type="text"
-              placeholder="Add new user"
+            <TextField
+              variant="outlined"
+              label="Add new user"
               value={newUserName}
               onChange={(e) => setNewUserName(e.target.value)}
-              className="border rounded px-3 py-1 mr-2 w-full"
+              fullWidth
+              sx={{ mr: 2 }}
             />
-            <button
+            <Button
               onClick={handleAddUser}
-              className="bg-green-500 text-white font-bold py-1 px-4 rounded hover:bg-green-600 transition"
+              variant="contained"
+              color="secondary"
             >
               Add
-            </button>
+            </Button>
           </div>
         </div>
       </div>
