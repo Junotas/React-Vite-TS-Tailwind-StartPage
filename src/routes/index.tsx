@@ -43,7 +43,7 @@ export const Route = createFileRoute('/')({
             </Button>
           </div>
 
-          <div className="min-h-[150px]">
+          <div className="max-h-[250px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
             {isLoading ? (
               <p>Loading users...</p>
             ) : error ? (
