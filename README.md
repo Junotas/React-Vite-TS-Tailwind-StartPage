@@ -26,7 +26,7 @@ Welcome to this React-Vite-Typescript-Tailwind-Mui-Material-TanStack Router and 
    npm run dev
    ```
 
-After completing these steps, you should see the project running on `http://localhost:5173`, displaying the initial home page.
+After completing these steps, you should see the project running on `http://localhost:5173`
 
 ## 📜 Routing with TanStack Router
 
@@ -58,8 +58,8 @@ The project incorporates **Material-UI (MUI)** to provide ready-made, customizab
 - **Responsive Components**: Pre-styled components like `Button`, `TextField`, and `Typography` are used for a polished UI.
 
 ### 🖥 Pages Included
-- **Home Page (`index.tsx`)**: The default page with clickable logos, a toggleable list, and data fetched using TanStack Query.
-- **About Page (`about.tsx`)**: A fun, animated page with additional info and an interactive button.
+- **Home Page (`index.tsx`)**
+- **About Page (`about.tsx`)**
 
 ## 🔮 Future Enhancements
 
