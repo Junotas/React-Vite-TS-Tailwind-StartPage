@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useUserList } from "../hooks/useUserList";
-import { Button, IconButton, TextField } from "@mui/material";
+import { Button, IconButton, TextField, useTheme } from "@mui/material";
 import GroupIcon from "@mui/icons-material/Group";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import DeleteIcon from "@mui/icons-material/Delete";
@@ -20,6 +20,8 @@ export const Route = createFileRoute("/")({
       isModified,
     } = useUserList();
 
+    const theme = useTheme();
+
     const handleAddUser = () => {
       if (newUserName.trim()) {
         addUser(newUserName);
@@ -35,13 +37,24 @@ export const Route = createFileRoute("/")({
     return (
       <div
         className="flex flex-col justify-center items-center min-h-screen"
-        style={{ backgroundColor: "#f3e5f5" }}
+        style={{ backgroundColor: theme.palette.background.default }}
       >
-        <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-6">
+        <div
+          className="w-full max-w-md"
+          style={{
+            backgroundColor: theme.palette.background.paper,
+            borderRadius: theme.shape.borderRadius,
+            boxShadow: theme.shadows[3],
+            padding: theme.spacing(3),
+          }}
+        >
           <div className="flex justify-between items-center border-b pb-3 mb-4">
             <div className="flex items-center space-x-2">
-              <GroupIcon sx={{ color: "#6a1b9a" }} />
-              <h2 className="text-2xl font-bold" style={{ color: "#6a1b9a" }}>
+              <GroupIcon sx={{ color: theme.palette.primary.main }} />
+              <h2
+                className="text-2xl font-bold"
+                style={{ color: theme.palette.primary.main }}
+              >
                 User List
               </h2>
             </div>
@@ -56,11 +69,18 @@ export const Route = createFileRoute("/")({
             </Button>
           </div>
 
-          <div className="max-h-[250px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">
+          <div
+            className="max-h-[250px] overflow-y-auto scrollbar-thin"
+            style={{
+              scrollbarColor: `${theme.palette.grey[400]} ${theme.palette.grey[200]}`,
+            }}
+          >
             {isLoading ? (
               <p>Loading users...</p>
             ) : error ? (
-              <p style={{ color: "#d32f2f" }}>Error loading users</p>
+              <p style={{ color: theme.palette.error.main }}>
+                Error loading users
+              </p>
             ) : (
               <ul className="list-disc list-inside text-center space-y-2">
                 {users.map((user) => (
@@ -71,7 +91,7 @@ export const Route = createFileRoute("/")({
                     {user.name}
                     <IconButton
                       onClick={() => removeUser(user.id)}
-                      sx={{ color: "secondary.main" }}
+                      sx={{ color: theme.palette.secondary.main }}
                       aria-label="delete user"
                     >
                       <DeleteIcon />
