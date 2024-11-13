@@ -12,13 +12,24 @@ const router = createRouter({ routeTree });
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#6a1b9a", // Purple
+      light: "#9c4dcc", // Light shade of purple
+      main: "#6a1b9a",  // Main purple
+      dark: "#38006b",  // Dark shade of purple
+      contrastText: "#ffffff", // Text color for primary
     },
     secondary: {
-      main: "#ff4081", // pinkish-red
+      light: "#ff79b0", // Light shade of pinkish-red
+      main: "#ff4081",  // Main pinkish-red
+      dark: "#c60055",  // Dark shade of pinkish-red
+      contrastText: "#000000", // Text color for secondary
+    },
+    text: {
+      primary: "#333333", // Dark gray for primary text
+      secondary: "#757575", // Medium gray for secondary text
     },
   },
 });
+
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
