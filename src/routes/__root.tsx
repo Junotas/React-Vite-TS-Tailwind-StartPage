@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link, Outlet, createRootRoute } from '@tanstack/react-router';
 import { Home as HomeIcon, Info as InfoIcon } from '@mui/icons-material';
 
