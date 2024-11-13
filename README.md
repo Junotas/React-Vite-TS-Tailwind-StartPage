@@ -57,7 +57,52 @@ The project incorporates **Material-UI (MUI)** to provide ready-made, customizab
 - **Theming**: Consistent primary and secondary color theming across components for a cohesive design.
 - **Responsive Components**: Pre-styled components like `Button`, `TextField`, and `Typography` are used for a polished UI.
 
+## 🎨 ESLint and Prettier
+
+The project is configured with ESLint and Prettier for consistent code formatting and linting. To ensure these tools work seamlessly in your development environment, follow the steps below to set up your VS Code settings:
+
+### Step 1: Install the Necessary Extensions
+
+1. Open the Extensions view in VS Code.
+2. Install the following extensions:
+   - **ESLint** by Microsoft
+   - **Prettier - Code Formatter** by Prettier
+
+### Step 2: Configure VS Code Settings
+
+To enable automatic formatting and linting on save, update your VS Code settings:
+
+1. Open VS Code settings by pressing `Ctrl + ,` or navigating to `File` > `Preferences` > `Settings`.
+2. Search for **Format On Save** and enable **Editor: Format On Save**. This will automatically format your code with Prettier each time you save.
+3. Search for **Default Formatter** and set **Editor: Default Formatter** to `Prettier - Code Formatter`.
+4. Search for **ESLint: Enable** and ensure it is enabled. This allows ESLint to lint your files in real-time.
+
+### Step 3: Verify Formatting
+
+To confirm everything is set up correctly:
+
+1. Open any`.tsx` file in the project.
+2. Make a change and save the file.
+3. You should see Prettier format the file on save, and any ESLint issues will be highlighted.
+
+### Step 4: Additional Scripts
+
+You can also run linting and formatting checks from the command line using the following scripts:
+
+```bash
+# Lint your code
+npm run lint
+
+# Format your code with Prettier
+npm run format
+```
+---
+
+This setup should ensure that ESLint and Prettier are working effectively with your VS Code environment.
+
 ### 🖥 Pages Included
+---
+
 - **Home Page (`index.tsx`)**
 - **About Page (`about.tsx`)**
 
@@ -65,5 +110,4 @@ The project incorporates **Material-UI (MUI)** to provide ready-made, customizab
 
 This project is designed to be easily extensible, so here are some ideas for future enhancements to add extra functionality and make it even more versatile:
 
-- **🔑 Authentication**: Consider adding Firebase Auth, Auth0, or another authentication provider for user login support.
-- **🔧 Linting & Formatting**: Configure ESLint and Prettier for code consistency and readability.
+- **🔑 Authentication**: Considering adding Firebase Auth, Auth0, or another authentication provider for user login support.
