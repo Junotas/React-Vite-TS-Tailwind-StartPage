@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import reactLogo from "../assets/react.svg";
 import viteLogo from "/vite.svg";
 import { createFileRoute } from "@tanstack/react-router";
-import { Button, Typography } from "@mui/material";
+import { Button, Typography, useTheme } from "@mui/material";
 
 export const Route = createFileRoute("/about")({
   component: () => {
     const [message, setMessage] = useState("We're just getting started!");
+    const theme = useTheme();
 
     const toggleMessage = () => {
       setMessage((prevMessage) =>
@@ -19,11 +20,16 @@ export const Route = createFileRoute("/about")({
     return (
       <div
         className="flex flex-col justify-center items-center min-h-screen"
-        style={{ backgroundColor: "#f3e5f5" }}
+        style={{ backgroundColor: theme.palette.background.default }}
       >
         <Typography
           variant="h1"
-          sx={{ fontWeight: "extrabold", color: "primary.main", mb: 4 }}
+          align="center"
+          sx={{
+            fontWeight: "bold",
+            color: theme.palette.primary.main,
+            marginBottom: theme.spacing(4),
+          }}
         >
           About Us
         </Typography>
@@ -44,7 +50,11 @@ export const Route = createFileRoute("/about")({
         <Typography
           variant="body1"
           align="center"
-          sx={{ color: "primary.main", mb: 4, maxWidth: "md" }}
+          sx={{
+            color: theme.palette.text.primary,
+            marginBottom: theme.spacing(4),
+            maxWidth: "600px",
+          }}
         >
           We’re two logos just hanging out, waiting for you to build something
           cool with us!
@@ -54,12 +64,19 @@ export const Route = createFileRoute("/about")({
           variant="contained"
           color="primary"
           onClick={toggleMessage}
-          sx={{ fontWeight: "bold", mb: 2 }}
+          sx={{ fontWeight: "bold", marginBottom: theme.spacing(2) }}
         >
           Click for a Surprise!
         </Button>
 
-        <Typography variant="h6" sx={{ color: "primary.main", mt: 2 }}>
+        <Typography
+          variant="h6"
+          align="center"
+          sx={{
+            color: theme.palette.primary.main,
+            marginTop: theme.spacing(2),
+          }}
+        >
           {message}
         </Typography>
       </div>
