@@ -1,8 +1,9 @@
-import React from 'react';
-import { Link, Outlet, createRootRoute } from '@tanstack/react-router';
-import { Home as HomeIcon, Info as InfoIcon } from '@mui/icons-material';
+import React from "react";
+import { Link, Outlet, createRootRoute } from "@tanstack/react-router";
+import { Home as HomeIcon, Info as InfoIcon } from "@mui/icons-material";
 
-const baseLinkStyles = "flex items-center space-x-2 hover:text-purple-200 transition font-bold";
+const baseLinkStyles =
+  "flex items-center space-x-2 hover:text-purple-200 transition font-bold";
 
 export const Route = createRootRoute({
   component: () => (
