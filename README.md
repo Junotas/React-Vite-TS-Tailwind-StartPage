@@ -75,7 +75,6 @@ To enable automatic formatting and linting on save, update your VS Code settings
 1. Open VS Code settings by pressing `Ctrl + ,` or navigating to `File` > `Preferences` > `Settings`.
 2. Search for **Format On Save** and enable **Editor: Format On Save**. This will automatically format your code with Prettier each time you save.
 3. Search for **Default Formatter** and set **Editor: Default Formatter** to `Prettier - Code Formatter`.
-4. Search for **ESLint: Enable** and ensure it is enabled. This allows ESLint to lint your files in real-time.
 
 ### Step 3: Verify Formatting
 
