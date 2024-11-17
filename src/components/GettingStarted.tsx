@@ -6,7 +6,7 @@ const GettingStarted = () => {
   const { title, steps, footer } = strings.sections.gettingStarted;
 
   return (
-    <Box sx={{ py: 10, bgcolor: "background.default", color: "text.secondary" }}>
+    <Box sx={{ py: 10, bgcolor: "primary.main", color: "text.primary" }}>
       <Typography variant="h2" align="center" sx={{ fontWeight: "bold", mb: 4 }}>
         {title}
       </Typography>

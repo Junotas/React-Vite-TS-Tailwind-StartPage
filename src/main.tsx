@@ -24,8 +24,9 @@ const theme = createTheme({
       contrastText: "#000000", // Text color for secondary
     },
     text: {
-      primary: "#333333", // Dark gray for primary text
+      primary: "#ffffff", // Dark gray for primary text
       secondary: "#757575", // Medium gray for secondary text
+      
     },
   },
 });

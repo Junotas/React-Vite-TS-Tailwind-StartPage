@@ -6,7 +6,7 @@ const FutureEnhancements = () => {
   const { title, description, features } = strings.sections.future;
 
   return (
-    <Box sx={{ py: 10, bgcolor: "background.default", color: "text.secondary" }}>
+    <Box sx={{ py: 10, bgcolor: "primary.light", color: "text.main" }}>
       <Typography variant="h2" align="center" sx={{ fontWeight: "bold", mb: 4 }}>
         {title}
       </Typography>
