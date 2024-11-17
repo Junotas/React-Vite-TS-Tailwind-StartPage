@@ -25,3 +25,4 @@ export const techStackData = [
     url: "https://tanstack.com/",
   },
 ];
+//remember to add MUI to the tech stack and double check fi something else is missing ESlint and prettier i remember now while writing this
