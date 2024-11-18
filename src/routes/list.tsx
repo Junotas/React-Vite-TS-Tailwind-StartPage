@@ -87,7 +87,7 @@ export const Route = createFileRoute("/list")({
                   <li
                     key={user.id}
                     className="flex justify-between items-center text-lg"
-                    style={{ color: "black" }} // set it to black fuck mui
+                    style={{ color: "black" }} // Set to black explicitly
                   >
                     {user.name}
                     <IconButton
@@ -110,7 +110,15 @@ export const Route = createFileRoute("/list")({
               value={newUserName}
               onChange={(e) => setNewUserName(e.target.value)}
               fullWidth
-              sx={{ mr: 2 }}
+              sx={{
+                mr: 2,
+                "& .MuiInputBase-input": {
+                  color: "black", // Set input text to black explicitly
+                },
+                "& .MuiInputLabel-root": {
+                  color: "black", // Set label text to black explicitly
+                },
+              }}
             />
             <IconButton type="submit" color="secondary" aria-label="add user">
               <AddCircleIcon />
