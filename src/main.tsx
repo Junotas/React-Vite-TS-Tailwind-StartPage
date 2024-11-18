@@ -26,7 +26,10 @@ const theme = createTheme({
     text: {
       primary: "#ffffff", // white for primary text
       secondary: "#757575", // Medium gray for secondary text
-      
+    },
+    background: {
+      default: "#121212", // Dark background for the entire app
+      paper: "#1e1e1e",   // Slightly lighter background for paper elements
     },
   },
 });
