@@ -6,7 +6,7 @@ export const strings = {
     },
     sections: {
       gettingStarted: {
-        title: "🚀 Getting Started",
+        title: "Welcome to your new project!",
         steps: [
           "This is a React-Vite TypeScript project with Tailwind CSS, ESlint, Prettier, Material-UI, TanStack Router, and TanStack Query.",
           "It features file-based routing, theming with Material-UI and modular components for a streamlined setup process.",
