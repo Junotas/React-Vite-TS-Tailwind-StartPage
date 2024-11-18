@@ -87,6 +87,7 @@ export const Route = createFileRoute("/list")({
                   <li
                     key={user.id}
                     className="flex justify-between items-center text-lg"
+                    style={{ color: "black" }} // set it to black fuck mui
                   >
                     {user.name}
                     <IconButton
