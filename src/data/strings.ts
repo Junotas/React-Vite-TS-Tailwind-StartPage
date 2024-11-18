@@ -8,6 +8,8 @@ export const strings = {
       gettingStarted: {
         title: "🚀 Getting Started",
         steps: [
+          "This is a React-Vite TypeScript project with Tailwind CSS, ESlint, Prettier, Material-UI, TanStack Router, and TanStack Query.",
+          "It features file-based routing, theming with Material-UI and modular components for a streamlined setup process.",
           "Clone the repository: `git clone https://github.com/Junotas/React-Vite-TS-Tailwind-StartPage.git`",
           "Remove Git history if starting fresh: `rm -rf .git && git init`",
           "Install dependencies: `npm install`",

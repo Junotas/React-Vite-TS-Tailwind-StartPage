@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, Outlet, createRootRoute } from "@tanstack/react-router";
+import ListAltSharpIcon from '@mui/icons-material/ListAltSharp';
 import { Home as HomeIcon, Info as InfoIcon } from "@mui/icons-material";
 import { useTheme } from "@mui/material";
 
@@ -52,8 +53,8 @@ export const Route = createRootRoute({
               transition: "color 0.3s",
             }}
           >
-            <InfoIcon fontSize="small" />
-            <span>About</span>
+            <ListAltSharpIcon fontSize="small" />
+            <span>List</span>
           </Link>
         </nav>
         <Outlet />
