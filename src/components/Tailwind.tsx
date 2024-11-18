@@ -12,7 +12,7 @@ const Tailwind = () => {
         bgcolor: 'primary.main',
         color: 'text.primary',
         boxShadow: 2,
-        borderRadius: 0, // Set to 0 for sharp corners
+        borderRadius: 0, 
         p: 3,
       }}
     >

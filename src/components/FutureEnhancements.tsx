@@ -8,10 +8,10 @@ const FutureEnhancements = () => {
   return (
     <Box
       sx={{
-        width: "100%", // Ensures it spans the full width of the page
+        width: "100%",
         py: 10,
-        bgcolor: "primary.main", // Background color from theme
-        color: "text.primary", // Text color from theme
+        bgcolor: "primary.main", 
+        color: "text.primary", 
       }}
     >
       <Typography variant="h2" align="center" sx={{ fontWeight: "bold", mb: 4 }}>
