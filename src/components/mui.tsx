@@ -6,14 +6,23 @@ const MUI = () => {
   const { title, description, features } = strings.sections.mui;
 
   return (
-    <Box sx={{ py: 10, bgcolor: 'primary.main', color: 'text.primary', boxShadow: 2, borderRadius: 2, p: 3 }}>
+    <Box
+      sx={{
+        py: 10,
+        bgcolor: 'primary.dark',
+        color: 'text.primary',
+        boxShadow: 2,
+        borderRadius: 0, // Set to 0 for sharp corners
+        p: 3,
+      }}
+    >
       <Typography variant="h2" align="center" sx={{ fontWeight: 'bold', mb: 4 }}>
         {title}
       </Typography>
       <Typography align="center" sx={{ mb: 3 }}>
         {description}
       </Typography>
-      <List sx={{ maxWidth: 800, mx: 'auto', px: 3 }}>
+      <List sx={{ px: 3 }}>
         {features.map((feature, index) => (
           <ListItem key={index} sx={{ mb: 2 }}>
             {feature}

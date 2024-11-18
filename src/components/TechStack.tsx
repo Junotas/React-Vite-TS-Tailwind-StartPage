@@ -4,7 +4,7 @@ import { techStackData } from '../data/techStackData';
 
 const TechStack = () => {
   return (
-    <Box sx={{ py: 10, bgcolor: 'primary.light', color: 'text.primary' }}>
+    <Box sx={{ py: 10, bgcolor: 'primary.dark', color: 'text.main' }}>
       <Typography variant="h2" align="center" sx={{ fontWeight: 'bold', mb: 3 }}>
         Tech Stack
       </Typography>
@@ -13,7 +13,7 @@ const TechStack = () => {
         justifyContent="center"
         gap={3}
         flexWrap="wrap"
-        sx={{ bgcolor: 'primary.main', p: 3, borderRadius: 2, boxShadow: 3 }}
+        sx={{ bgcolor: 'primary.dark', color: 'text.main', p: 3, borderRadius: 2, boxShadow: 3 }}
       >
         {techStackData.map((tech, index) => (
           <Link
