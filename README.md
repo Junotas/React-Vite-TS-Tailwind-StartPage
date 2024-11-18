@@ -102,8 +102,10 @@ This setup should ensure that ESLint and Prettier are working effectively with y
 ### 🖥 Pages Included
 ---
 
-- **Home Page (`index.tsx`)**
-- **About Page (`about.tsx`)**
+- **Home Page (`index.tsx`)** (Welcome page more or less the read me)
+- **About Page (`about.tsx`)** (Originally just to show the routing with two pages but might remove the page)
+- **List Page (`list.tsx`)** (Tanstack query and custom hook exemple)
+
 
 ## 🔮 Future Enhancements
 
