@@ -28,8 +28,8 @@ const theme = createTheme({
       secondary: "#757575", // Medium gray for secondary text
     },
     background: {
-      default: "#121212", // Dark background for the entire app
-      paper: "#1e1e1e",   // Slightly lighter background for paper elements
+      default: "#6a1b9a", // Dark background for the entire app
+      paper: "#ffffff",   // white background for paper elements
     },
   },
 });

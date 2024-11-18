@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useUserList } from "../hooks/useUserList";
-import { Button, IconButton, TextField, useTheme } from "@mui/material";
+import { Button, IconButton, TextField, useTheme, Typography, Box } from "@mui/material";
 import GroupIcon from "@mui/icons-material/Group";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import DeleteIcon from "@mui/icons-material/Delete";
@@ -35,29 +35,30 @@ export const Route = createFileRoute("/list")({
     };
 
     return (
-      <div
+      <Box
         className="flex flex-col justify-center items-center min-h-screen"
-        style={{ backgroundColor: theme.palette.background.default }}
+        sx={{ backgroundColor: theme.palette.background.default }}
       >
-        <div
+        <Box
           className="w-full max-w-md"
-          style={{
+          sx={{
             backgroundColor: theme.palette.background.paper,
             borderRadius: theme.shape.borderRadius,
             boxShadow: theme.shadows[3],
             padding: theme.spacing(3),
+            color: theme.palette.text.primary,
           }}
         >
-          <div className="flex justify-between items-center border-b pb-3 mb-4">
-            <div className="flex items-center space-x-2">
+          <Box className="flex justify-between items-center border-b pb-3 mb-4">
+            <Box className="flex items-center space-x-2">
               <GroupIcon sx={{ color: theme.palette.primary.main }} />
-              <h2
-                className="text-2xl font-bold"
-                style={{ color: theme.palette.primary.main }}
+              <Typography
+                variant="h4"
+                sx={{ color: theme.palette.primary.main, fontWeight: "bold" }}
               >
                 User List
-              </h2>
-            </div>
+              </Typography>
+            </Box>
             <Button
               variant="contained"
               color="primary"
@@ -67,20 +68,20 @@ export const Route = createFileRoute("/list")({
             >
               {isModified ? "Reset List" : "Fetch List"}
             </Button>
-          </div>
+          </Box>
 
-          <div
+          <Box
             className="max-h-[250px] overflow-y-auto scrollbar-thin"
-            style={{
+            sx={{
               scrollbarColor: `${theme.palette.grey[400]} ${theme.palette.grey[200]}`,
             }}
           >
             {isLoading ? (
-              <p>Loading users...</p>
+              <Typography>Loading users...</Typography>
             ) : error ? (
-              <p style={{ color: theme.palette.error.main }}>
+              <Typography sx={{ color: theme.palette.error.main }}>
                 Error loading users
-              </p>
+              </Typography>
             ) : (
               <ul className="list-disc list-inside text-center space-y-2">
                 {users.map((user) => (
@@ -101,7 +102,7 @@ export const Route = createFileRoute("/list")({
                 ))}
               </ul>
             )}
-          </div>
+          </Box>
 
           <form onSubmit={handleFormSubmit} className="flex items-center mt-4">
             <TextField
@@ -124,8 +125,8 @@ export const Route = createFileRoute("/list")({
               <AddCircleIcon />
             </IconButton>
           </form>
-        </div>
-      </div>
+        </Box>
+      </Box>
     );
   },
 });
