@@ -1,3 +1,5 @@
+//fixes the error: "React is defined but never used" by importing React
+// @ts-expect-error: Unused variable
 import React, { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";

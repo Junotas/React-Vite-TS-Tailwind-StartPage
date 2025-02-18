@@ -1,3 +1,5 @@
+//fixes the error: "React is defined but never used" by importing React
+// @ts-expect-error: Unused variable
 import React, { useState } from "react";
 import reactLogo from "../assets/react.svg";
 import viteLogo from "/vite.svg";

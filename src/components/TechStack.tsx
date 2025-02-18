@@ -1,3 +1,5 @@
+//fixes the error: "React is defined but never used" by importing React
+// @ts-expect-error: Unused variable
 import React from 'react';
 import { Box, Typography, Link } from '@mui/material';
 import { techStackData } from '../data/techStackData';

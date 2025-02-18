@@ -1,3 +1,5 @@
+//fixes the error: "React is defined but never used" by importing React
+// @ts-expect-error: Unused variable
 import React from "react";
 import { Link, Outlet, createRootRoute } from "@tanstack/react-router";
 import ListAltSharpIcon from '@mui/icons-material/ListAltSharp';
