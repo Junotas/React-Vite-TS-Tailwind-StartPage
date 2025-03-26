@@ -1,4 +1,3 @@
-//fixes the error: "React is defined but never used" by importing React
 // @ts-expect-error: Unused variable
 import React from "react";
 import { Box, Typography, List, ListItem } from "@mui/material";
@@ -8,21 +7,18 @@ const FutureEnhancements = () => {
   const { title, description, features } = strings.sections.future;
 
   return (
-    <Box
-      sx={{
-        width: "100%",
-        py: 10,
-        bgcolor: "primary.main", 
-        color: "text.primary", 
-      }}
-    >
-      <Typography variant="h2" align="center" sx={{ fontWeight: "bold", mb: 4 }}>
+    <Box sx={{ py: 10, bgcolor: "primary.main", color: "text.primary" }}>
+      <Typography
+        variant="h2"
+        align="center"
+        sx={{ fontWeight: "bold", mb: 4 }}
+      >
         {title}
       </Typography>
       <Typography align="center" sx={{ mb: 3 }}>
         {description}
       </Typography>
-      <List sx={{ maxWidth: 800, mx: "auto", px: 3 }}>
+      <List sx={{ maxWidth: 800, mx: "auto", px: 3, color: "text.secondary" }}>
         {features.map((feature, index) => (
           <ListItem key={index} sx={{ mb: 2 }}>
             {feature}
