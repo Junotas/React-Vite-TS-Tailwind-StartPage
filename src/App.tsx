@@ -1,3 +1,6 @@
+//This file is at this point obsolete. Hence it is commented out.
+//It is replaced by the index.tsx file in the routes folder.
+/*
 import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
@@ -36,3 +39,4 @@ function App() {
 }
 
 export default App;
+*/
