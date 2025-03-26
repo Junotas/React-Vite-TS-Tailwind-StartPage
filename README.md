@@ -33,7 +33,7 @@ After completing these steps, you should see the project running on `http://loca
 The project utilizes **TanStack Router** for easy, type-safe, and file-based routing:
 - Each page corresponds to a file within the `src/routes` folder, making it easy to manage and extend routes.
 - Navigation between pages is defined in the root layout file, `__root.tsx`, which includes links for Home and About.
-- To add new pages, simply create a new file in the `src/routes` folder, and TanStack Router will automatically pick it up as a new route.
+- To add new pages, simply create a new file in the `src/routes` folder, and TanStack Router will automatically pick it up as a new route after you've run npm run dev.
 
 ## 📊 Data Fetching with TanStack Query
 
