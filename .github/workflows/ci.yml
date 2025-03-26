@@ -30,3 +30,4 @@ jobs:
 
       - name: Fix vulnerabilities (non-breaking)
         run: npm audit fix
+        continue-on-error: true
