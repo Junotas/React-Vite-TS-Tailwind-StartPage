@@ -1,4 +1,3 @@
-//fixes the error: "React is defined but never used" by importing React
 // @ts-expect-error: Unused variable
 import React from "react";
 import { Box, Typography, List, ListItem } from "@mui/material";
@@ -8,11 +7,15 @@ const GettingStarted = () => {
   const { title, steps, footer } = strings.sections.gettingStarted;
 
   return (
-    <Box sx={{ width: "100%", py: 10, bgcolor: "primary.dark", color: "text.primary" }}>
-      <Typography variant="h2" align="center" sx={{ fontWeight: "bold", mb: 4 }}>
+    <Box sx={{ py: 10, bgcolor: "primary.dark", color: "text.primary" }}>
+      <Typography
+        variant="h2"
+        align="center"
+        sx={{ fontWeight: "bold", mb: 4 }}
+      >
         {title}
       </Typography>
-      <List sx={{ px: 3 }}>
+      <List sx={{ px: 3, color: "text.secondary" }}>
         {steps.map((step, index) => (
           <ListItem key={index} sx={{ mb: 2 }}>
             {step}
@@ -25,6 +28,5 @@ const GettingStarted = () => {
     </Box>
   );
 };
-
 
 export default GettingStarted;
