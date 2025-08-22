@@ -2,7 +2,7 @@
 
 Welcome to this React-Vite-Typescript-Tailwind-Mui-Material-TanStack Router and Query landing page (yes, a mouthful).
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Clone the Repository**
    ```bash
@@ -28,14 +28,14 @@ Welcome to this React-Vite-Typescript-Tailwind-Mui-Material-TanStack Router and 
 
 After completing these steps, you should see the project running on `http://localhost:5173`
 
-## 📜 Routing with TanStack Router
+## Routing with TanStack Router
 
 The project utilizes **TanStack Router** for easy, type-safe, and file-based routing:
 - Each page corresponds to a file within the `src/routes` folder, making it easy to manage and extend routes.
 - Navigation between pages is defined in the root layout file, `__root.tsx`, which includes links for Home and About.
 - To add new pages, simply create a new file in the `src/routes` folder, and TanStack Router will automatically pick it up as a new route after you've run npm run dev.
 
-## 📊 Data Fetching with TanStack Query
+## Data Fetching with TanStack Query
 
 The project leverages **TanStack Query** for efficient data fetching, caching, and state management:
 
@@ -43,21 +43,21 @@ The project leverages **TanStack Query** for efficient data fetching, caching, a
 - **Type Safety**: Ensures type-safe data handling, reducing potential errors.
 - **Flexible Fetching**: Allows conditional fetching, refetching, and background updates, demonstrated here with a user list that can be fetched, modified, and reset with ease.
 
-## 🎨 Styling with Tailwind CSS
+## Styling with Tailwind CSS
 
 The project uses **Tailwind CSS** to create a streamlined, utility-first approach for custom styling:
 
 - **Responsive Design**: Tailwind makes it easy to apply responsive, mobile-friendly styles directly to components.
 - **Utility Classes**: Apply consistent spacing, alignment, and color styles using utility classes, reducing CSS overhead.
 
-## 🎨 Styling with Material-UI (MUI)
+## Styling with Material-UI (MUI)
 
 The project incorporates **Material-UI (MUI)** to provide ready-made, customizable, and accessible components:
 
 - **Theming**: Consistent primary and secondary color theming across components for a cohesive design.
 - **Responsive Components**: Pre-styled components like `Button`, `TextField`, and `Typography` are used for a polished UI.
 
-## 🎨 ESLint and Prettier
+## ESLint and Prettier
 
 The project is configured with ESLint and Prettier for consistent code formatting and linting. To ensure these tools work seamlessly in your development environment, follow the steps below to set up your VS Code settings:
 
@@ -99,7 +99,7 @@ npm run format
 
 This setup should ensure that ESLint and Prettier are working effectively with your VS Code environment.
 
-### 🖥 Pages Included
+### Pages Included
 ---
 
 - **Home Page (`index.tsx`)** (Welcome page more or less the read me)
@@ -107,8 +107,9 @@ This setup should ensure that ESLint and Prettier are working effectively with y
 - **List Page (`list.tsx`)** (Tanstack query and custom hook exemple)
 
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 This project is designed to be easily extensible, so here are some ideas for future enhancements to add extra functionality and make it even more versatile:
 
-- **🔑 Authentication**: Considering adding Firebase Auth, Auth0, or another authentication provider for user login support.
+- **Authentication**: Considering adding Firebase Auth, Auth0, or another authentication provider for user login support.
+
